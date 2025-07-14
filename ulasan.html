@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulasan Pelanggan - TravelinAja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">Travelin-Aja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tour_booking.html">Pemesanan Tiket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Pelayanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="custom_package.html">Paket Liburan Custom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ulasan.html">Ulasan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+                <div id="auth-buttons" class="d-flex">
+                    <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary">Daftar</a>
+                </div>
+                <div id="user-info" class="d-none align-items-center">
+                    <span id="welcome-message" class="me-3"></span>
+                    <button id="logout-button" class="btn btn-danger">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-5">Apa Kata Mereka Tentang Kami?</h2>
+        
+        <div class="row g-4 mb-5" id="ulasanContainer">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/50?img=1" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="card-title mb-0 fw-bold">Andi Pratama</h6>
+                                <small class="text-muted">Paket Wisata Raja Ampat</small>
+                            </div>
+                        </div>
+                        <div class="rating mb-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6">"Pengalaman yang luar biasa! Pemandu wisatanya sangat profesional dan pemandangan bawah lautnya tak terlupakan. Travelin-Aja membuat semuanya mudah."</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/50?img=2" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="card-title mb-0 fw-bold">Siti Aisyah</h6>
+                                <small class="text-muted">Open Trip Gunung Bromo</small>
+                            </div>
+                        </div>
+                        <div class="rating mb-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i> </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6">"Perjalanan ke Bromo sangat menyenangkan. Koordinasi dari tim Travelin-Aja sangat baik, meskipun penjemputan sedikit terlambat. Selebihnya, mantap!"</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/50?img=3" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="card-title mb-0 fw-bold">Budi Santoso</h6>
+                                <small class="text-muted">Food Tour Jakarta</small>
+                            </div>
+                        </div>
+                        <div class="rating mb-2 text-warning">
+                             <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6">"Sangat direkomendasikan untuk para pecinta kuliner. Pilihan makanannya otentik dan enak-enak. Panduannya juga sangat ramah dan informatif."</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/50?img=4" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="card-title mb-0 fw-bold">Dewi Lestari</h6>
+                                <small class="text-muted">Paket Liburan Bali</small>
+                            </div>
+                        </div>
+                        <div class="rating mb-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6">"Bali adalah impian yang menjadi kenyataan berkat Travelin-Aja. Akomodasi dan itinerary sangat sempurna. Pasti akan menggunakan jasa mereka lagi!"</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/50?img=5" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="card-title mb-0 fw-bold">Candra Wijaya</h6>
+                                <small class="text-muted">Tour Sejarah Yogyakarta</small>
+                            </div>
+                        </div>
+                        <div class="rating mb-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6">"Pemandu sangat berpengetahuan tentang sejarah Yogyakarta. Sedikit kendala dengan transportasi di satu titik, tapi secara keseluruhan sangat informatif."</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/50?img=6" alt="User" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="card-title mb-0 fw-bold">Eka Putri</h6>
+                                <small class="text-muted">Paket Keluarga Lombok</small>
+                            </div>
+                        </div>
+                        <div class="rating mb-2 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-6">"Liburan keluarga ke Lombok berjalan lancar dan menyenangkan. Anak-anak sangat menikmati. Travelin-Aja mengurus semuanya dengan baik."</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-center mb-4">Berikan Ulasan Anda</h3>
+        <div class="card shadow-sm border-0 p-4">
+            <div class="card-body">
+                <form id="reviewForm">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama Anda</label>
+                        <input type="text" class="form-control" id="nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="paket" class="form-label">Paket Wisata/Layanan yang Digunakan</label>
+                        <input type="text" class="form-control" id="paket" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">Rating</label>
+                        <div id="rating-stars" class="text-warning mb-2">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="selectedRating" name="rating" value="0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ulasanText" class="form-label">Ulasan Anda</label>
+                        <textarea class="form-control" id="ulasanText" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim Ulasan</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Travelin-Aja</p>
+            <p><strong>UTS Pemrograman Web Portal</strong></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ratingStars = document.getElementById('rating-stars');
+            const selectedRatingInput = document.getElementById('selectedRating');
+            let currentRating = 0;
+
+            ratingStars.addEventListener('mouseover', function(e) {
+                if (e.target.classList.contains('fa-star')) {
+                    const rating = e.target.dataset.rating;
+                    updateStarDisplay(rating);
+                }
+            });
+
+            ratingStars.addEventListener('mouseout', function() {
+                updateStarDisplay(currentRating);
+            });
+
+            ratingStars.addEventListener('click', function(e) {
+                if (e.target.classList.contains('fa-star')) {
+                    currentRating = e.target.dataset.rating;
+                    selectedRatingInput.value = currentRating;
+                    updateStarDisplay(currentRating);
+                }
+            });
+
+            function updateStarDisplay(rating) {
+                const stars = ratingStars.querySelectorAll('.fa-star');
+                stars.forEach(star => {
+                    if (star.dataset.rating <= rating) {
+                        star.classList.remove('far');
+                        star.classList.add('fas');
+                    } else {
+                        star.classList.remove('fas');
+                        star.classList.add('far');
+                    }
+                });
+            }
+
+            document.getElementById('reviewForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const nama = document.getElementById('nama').value;
+                const paket = document.getElementById('paket').value;
+                const ulasanText = document.getElementById('ulasanText').value;
+                const rating = selectedRatingInput.value;
+
+                if (rating === "0") {
+                    alert("Harap berikan rating bintang Anda.");
+                    return;
+                }
+
+                // Create the star HTML based on the rating
+                let starHtml = '';
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= rating) {
+                        starHtml += '<i class="fas fa-star"></i>';
+                    } else {
+                        starHtml += '<i class="far fa-star"></i>';
+                    }
+                }
+
+                const newReviewHtml = `
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://i.pravatar.cc/50?img=7" alt="User" class="rounded-circle me-3">
+                                    <div>
+                                        <h6 class="card-title mb-0 fw-bold">${nama}</h6>
+                                        <small class="text-muted">${paket}</small>
+                                    </div>
+                                </div>
+                                <div class="rating mb-2 text-warning">
+                                    ${starHtml}
+                                </div>
+                                <blockquote class="blockquote mb-0">
+                                    <p class="fs-6">"${ulasanText}"</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Get the container for reviews
+                const ulasanContainer = document.getElementById('ulasanContainer');
+                
+                // Add the new review to the beginning of the container
+                ulasanContainer.insertAdjacentHTML('afterbegin', newReviewHtml);
+
+                alert('Terima kasih atas ulasan Anda!');
+                document.getElementById('reviewForm').reset();
+                currentRating = 0; // Reset stars
+                updateStarDisplay(0); // Clear star display
+                selectedRatingInput.value = 0; // Reset hidden input
+            });
+        });
+    </script>
+</body>
+</html>
